@@ -40,6 +40,9 @@ git show commit_hash
 · Delete all branches except
 git branch| grep -v master| grep -v develop| xargs git branch -D
 
+· Show changes in a file
+git diff file
+
 ## Bisect
 Git bisect start
 Git bisect bad / git bisect good
