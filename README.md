@@ -44,6 +44,28 @@ git branch| grep -v master| grep -v develop| xargs git branch -D
 git diff file
 
 ## Bisect
-Git bisect start
-Git bisect bad / git bisect good
-Git bisect reset
+Start
+git bisect start
+Bad
+git bisect bad
+Good
+git bisect good [SHA]?
+Finish
+git bisect reset
+
+## Tag
+List tags
+git tag
+
+Tag a commit
+git tag tag_name
+Tag with message (annotated)
+git tag -a tag_name (will ask for a message)
+Push tag origin
+git push origin tag_name
+Fetch all tags
+git fetch --all --tags
+Checkout a tag & creating branch
+git checkout tag_name -b branch_name
+Push tag
+git push origin tag_name
