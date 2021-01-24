@@ -5,6 +5,7 @@
 * [Stash](#stash)
 * [Handy Commands](#handy-commands)
 * [Tags](#tags)
+* [Cherry Pick](#cherry-pick)
 
 
 ## Undo
@@ -90,15 +91,26 @@ $ git tag
 $ git tag tag_name
 
 # Tag with message (annotated)
-$ git tag -a tag_name (will ask for a message)
+$ git tag -a tag_name (will ask message)
 
 # Push tag origin
 $ git push origin tag_name
-
 
 # Fetch all tags
 $ git fetch --all --tags
 
 # Checkout a tag & creating branch
 $ git checkout tag_name -b branch_name
+```
+
+## Cherry Pick
+```sh
+# Execute
+$ git cherry-pick sha
+
+# without commit
+$ git cherry-pick --no-commit sha
+
+# Pick latest commit from branch
+$ git cherry-pick branch_name
 ```
